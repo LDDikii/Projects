@@ -1,0 +1,12 @@
+button {
+    width: 150px;
+    height: 60px;
+    margin: 10px;
+    color: white;
+    background-color: orange;
+    border-radius: 7px;
+}
+
+/* button:hover {
+    background-color:black;
+} */
