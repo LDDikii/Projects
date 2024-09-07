@@ -20,3 +20,13 @@ btn.addEventListener('click', () => {
 });
 
 console.log(box.getBoundingClientRect().top);
+
+const style = window.getComputedStyle(box);
+
+console.log(style);
+
+console.log(document.documentElement.clientWidth);
+
+//Можно сделать кнопку перемещения страницы в самый вверх при помощи document.documentElement.scrollTop = 0
+// window.scrollBy() листает страницу от текущей позиции
+// window.scrollTo()
