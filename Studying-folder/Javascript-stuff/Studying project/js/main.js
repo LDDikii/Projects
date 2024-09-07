@@ -123,5 +123,5 @@ window.addEventListener('DOMContentLoaded', () => {
         if(e.code === 'Escape' && modal.classList.contains('show')) {
             closeModal();
         }
-    })
+    });
 });
