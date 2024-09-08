@@ -64,3 +64,24 @@ btn.addEventListener('click', function(){
     // console.log(this);
     this.style.backgroundColor = 'red';
 });
+
+const obj = {
+    num: 5,
+    sayNumber: function(){
+        const say = () => {
+            console.log(this.num);
+        };
+
+        say();
+    }
+}
+
+obj.sayNumber();
+
+// const double = (a) => {
+//     return a * 2;
+// }
+// const double = (a) => a * 2;
+const double = a => a * 2;
+
+console.log(double(4));
