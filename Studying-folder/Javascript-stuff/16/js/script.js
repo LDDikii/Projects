@@ -41,6 +41,10 @@ const test = time => {
 // test(1000).then(() => console.log('1000ms'));
 // test(2000).then(() => console.log('2000ms'));
 
-Promise.all([test(1000), test(2000)]).then(() => {
+// Promise.all([test(1000), test(2000)]).then(() => {   Выполняется когда выполняются все обещания
+//     console.log('All')
+// });
+
+Promise.race([test(1000), test(2000)]).then(() => { // Выполняется когда выполняется самое первое обещание
     console.log('All')
-})
+});
