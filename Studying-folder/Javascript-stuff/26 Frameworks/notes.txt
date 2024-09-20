@@ -1,0 +1,21 @@
+Что необходимо выучить что бы рабоать с:
+
+Angular:
+- node.js (Хотя бы установить)
+- TypeScript
+- Webpack
+- MVC pattern (Шаблон проектирования)
+- Angular 
+
+React:
+- JSX
+- Babel
+- Webpack
+- React 
+- node.js (Хотя бы установить)
+
+Vue.js:
+- JS
+- Webpack
+- Vue
+- node.js (Хотя бы установить)
