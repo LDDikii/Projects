@@ -1,6 +1,5 @@
-function timer() {
-    const deadLine = '2024-09-20';
-
+function timer(id, deadline) {
+    
     function getTimeRemaining(endtime) {
         const t = Date.parse(endtime) - Date.parse(new Date());
         const days = Math.floor(t / (1000 * 60 * 60 * 24));
@@ -49,7 +48,7 @@ function timer() {
         }
     }
 
-    setClock('.timer', deadLine);
+    setClock(id, deadline);
 }
 
-module.exports = timer;
+export default timer;
