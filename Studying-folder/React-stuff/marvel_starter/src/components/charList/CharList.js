@@ -16,6 +16,12 @@ class CharList extends Component {
 
     marvelService = new MarvelService();
 
+    onCharListLoading = () => {
+        this.setState({
+            newItemLoading: true
+        })
+    }
+
     onCharListLoaded = (newCharList) => {
         this.setState(({offset, charList}) => ({
             charList: [...charList, ...newCharList],
@@ -39,12 +45,6 @@ class CharList extends Component {
         this.marvelService.getAllCharacters(offset)
             .then(this.onCharListLoaded)
             .catch(this.onError);
-    }
-
-    onCharListLoading = () => {
-        this.setState({
-            newItemLoading: true
-        })
     }
 
     renderItems(arr) {
